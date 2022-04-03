@@ -1,0 +1,62 @@
+.card {
+   pointer-events: all;
+   cursor: pointer;
+   width: 18rem;
+}
+
+.logo-save {
+   display: flex;
+   justify-content: space-between;
+   pointer-events: fill;
+}
+
+.card img {
+   width: 40px;
+   height: 40px;
+}
+
+.bi-bookmark {
+   border-color: purple;
+}
+
+.description-content {
+   background-color: rgb(255, 255, 255);
+   color: black;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s ease-in-out;
+}
+
+.description {
+   position: absolute;
+   height: 100%;
+   top: 50%;
+   left: 10%;
+   transform: translate(-50%, -50%) scale(0.5);
+   transition: all 0.3s ease-in-out;
+}
+
+.description p {
+   color: orange;
+   font-size: 40px;
+}
+
+.data {
+   display: inline;
+   color: white;
+   font-size: 40px;
+}
+
+.open {
+   opacity: 1;
+   pointer-events: all;
+}
+
+.close {
+   pointer-events: none;
+}
