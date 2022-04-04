@@ -49,7 +49,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-color: #111111;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -59,9 +59,10 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 275px;
+  width: 200px;
   height: 100%;
-  background-color: #ff9f01;
+  background: rgb(244,194,108);
+  background: linear-gradient(80deg, rgba(244,194,108,1) 0%, rgba(0,0,0,1) 80%);
   z-index: 5;
 }
 
@@ -188,7 +189,7 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 8px 40px;
-  background-color: #ff9f01;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -198,7 +199,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #e78f00;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
 }
 
 .slider_section .img-box img {
@@ -368,7 +369,7 @@ a:focus {
 .find_section form .btn-box button {
   display: inline-block;
   padding: 14px 35px;
-  background-color: #ff9f01;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -408,7 +409,7 @@ a:focus {
 }
 
 .job_section .handler_btn-box .nav-link.active {
-  background-color: #ff9f01;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
 }
 
 .job_section .job_board {
@@ -491,7 +492,7 @@ a:focus {
 }
 
 .feature_section {
-  background-color: #ff9f01;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
 }
 
 .feature_section .row {
@@ -637,7 +638,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
-  background-color: #ff9f01;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
   background-position: center;
   border-radius: 100%;
   margin: 0 2.5px;
