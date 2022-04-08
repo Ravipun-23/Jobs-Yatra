@@ -22,21 +22,24 @@
 .description-content {
    background-color: rgb(255, 255, 255);
    color: black;
-   position: fixed;
-   top: 0;
-   left: 0;
-   height: 100%;
-   width: 100%;
+   position: absolute;
+   top: 31%;
+   left: 44%;
+   height: 68%;
+   width: 55%;
    opacity: 0;
    pointer-events: none;
    transition: all 0.3s ease-in-out;
+   z-index: 5;
+   overflow-y: scroll;
 }
 
 .description {
    position: absolute;
    height: 100%;
-   top: 50%;
-   left: 10%;
+   width: 50%;
+   top: 31%;
+   right: 36%;
    transform: translate(-50%, -50%) scale(0.5);
    transition: all 0.3s ease-in-out;
 }

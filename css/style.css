@@ -1,11 +1,24 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 61%, 78%) 95%);
+  background-size: 300% 300%;
+  animation: animate-background 10s infinite ease-in-out;
+}
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .layout_padding {
-  padding: 75px 0;
+  padding: 75px 0 25%;
 }
 
 .layout_padding2 {
@@ -33,8 +46,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .heading_container h2 {
@@ -61,8 +74,12 @@ body {
   right: 0;
   width: 200px;
   height: 100%;
-  background: rgb(244,194,108);
-  background: linear-gradient(80deg, rgba(244,194,108,1) 0%, rgba(0,0,0,1) 80%);
+  background: rgb(244, 194, 108);
+  background: linear-gradient(
+    80deg,
+    rgba(244, 194, 108, 1) 0%,
+    rgba(0, 0, 0, 1) 80%
+  );
   z-index: 5;
 }
 
@@ -119,7 +136,7 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -167,11 +184,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 90%;
 }
 
@@ -191,11 +208,14 @@ a:focus {
   padding: 8px 40px;
   background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 86%, 69%) 95%);
   color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   border: none;
   margin: 35px 0 50px 0;
   text-transform: uppercase;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
 }
 
 .slider_section .detail-box a:hover {
@@ -237,7 +257,7 @@ a:focus {
 .slider_section .carousel-control-prev {
   background-image: url(../images/prev.png);
   -webkit-transform: translate(50%, -60%);
-          transform: translate(50%, -60%);
+  transform: translate(50%, -60%);
 }
 
 .slider_section .carousel-control-prev:hover {
@@ -247,7 +267,7 @@ a:focus {
 .slider_section .carousel-control-next {
   background-image: url(../images/next.png);
   -webkit-transform: translate(50%, 60%);
-          transform: translate(50%, 60%);
+  transform: translate(50%, 60%);
 }
 
 .slider_section .carousel-control-next:hover {
@@ -259,8 +279,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   bottom: 25px;
   right: 15px;
@@ -277,8 +297,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section ol.carousel-indicators li {
@@ -301,7 +321,7 @@ a:focus {
 
 .find_section {
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   position: relative;
   z-index: 9;
 }
@@ -315,17 +335,18 @@ a:focus {
 
 .find_section .form_container .box {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .find_section .form_container .box.b-1 {
   -webkit-box-flex: 1.3;
-      -ms-flex: 1.3;
-          flex: 1.3;
+  -ms-flex: 1.3;
+  flex: 1.3;
 }
 
-.find_section .form_container .box.b-2 .form-control, .find_section .form_container .box.b-3 .form-control {
+.find_section .form_container .box.b-2 .form-control,
+.find_section .form_container .box.b-3 .form-control {
   text-align: center;
 }
 
@@ -339,7 +360,7 @@ a:focus {
 .find_section form .form-control {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 0;
   border: none;
   border-right: 1px solid #cacbcc;
@@ -349,8 +370,8 @@ a:focus {
 
 .find_section form select {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-image: url(../images/down-arrow.png);
   background-size: 15px;
   background-position: 97% center;
@@ -362,8 +383,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .find_section form .btn-box button {
@@ -387,8 +408,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .job_section .handler_btn-box .nav-tabs {
@@ -422,11 +443,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 75px 0 50px 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .job_section .content-box .content .box {
@@ -440,8 +461,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 15px;
   border-radius: 25px;
 }
@@ -450,17 +471,17 @@ a:focus {
   text-transform: uppercase;
   color: #ffffff;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .job_section .content-box .content .box a {
@@ -473,8 +494,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .job_section .content-box .btn-box a {
@@ -497,8 +518,8 @@ a:focus {
 
 .feature_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .feature_section .detail-box {
@@ -534,8 +555,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .people_section .people_container.c-2 {
@@ -555,8 +576,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .people_section .btn-box a {
@@ -579,11 +600,11 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   background-color: #ffffff;
   padding: 45px 15px;
@@ -615,8 +636,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 25px 0;
   border-bottom: 1px solid #acacac;
   margin: 0 -1.5px;
@@ -714,8 +735,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .info_section .form_container label {
@@ -754,7 +775,7 @@ a:focus {
 
 .info_section .form_container button:hover {
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 /* end info section */
@@ -764,8 +785,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #ffffff;
   padding: 20px;
 }
