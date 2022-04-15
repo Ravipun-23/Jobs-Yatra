@@ -1,9 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
+  position: relative;
   color: #0c0c0c;
   background-image: linear-gradient(135deg, #23212f 5%, hsl(38, 61%, 78%) 95%);
   background-size: 300% 300%;
   animation: animate-background 10s infinite ease-in-out;
+  min-height: 100vh;
 }
 @keyframes animate-background {
   0% {
@@ -784,11 +786,13 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position:relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #ffffff;
   padding: 20px;
+  bottom: 0;
 }
 
 .footer_section p {
@@ -802,4 +806,3 @@ a:focus {
 }
 
 /* end footer section*/
-/*# sourceMappingURL=style.css.map */

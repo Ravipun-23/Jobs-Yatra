@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>JOBS YATRA</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+      .header {
+        display: flex;
+        position: absolute;
+        top: 30%;
+        margin-left: 40%;
+        flex-direction: column;
+      }
+      .emp-img img {
+        width: 100%;
+      }
+      .emp-img h2 span {
+        color: white;
+        font: bold 24px/45px Helvetica, Sans-Serif;
+        padding: 10px;
+      }
+      .emp-img button {
+        height: 3em;
+        width: 8em;
+        border: none;
+        border-radius: 10em;
+        background: #016dd9;
+        font-size: 17px;
+        color: #ffffff;
+        font-family: inherit;
+        font-weight: 500;
+        /* position: absolute; */
+        /* top: 60%;
+        left: 50%; */
+        text-align: center;
+      }
+
+      .emp-img button:hover {
+        animation: shake3856 0.3s linear infinite both;
+      }
+
+      @keyframes shake3856 {
+        0% {
+          -webkit-transform: translate(0);
+          transform: translate(0);
+        }
+
+        20% {
+          -webkit-transform: translate(-2px, 2px);
+          transform: translate(-2px, 2px);
+        }
+
+        40% {
+          -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+        }
+
+        60% {
+          -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+        }
+
+        80% {
+          -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px);
+        }
+
+        100% {
+          -webkit-transform: translate(0);
+          transform: translate(0);
+        }
+      }
+      .con-two {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgb(106, 87, 68);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .con-two::before,
+      .con-two::after {
+        content: "";
+        position: relative;
+        height: 50%;
+        width: 50%;
+        border-radius: 20% 50% 20% / 60% 60% 60%;
+      }
+      .con-two::before {
+        top: 0;
+        left: 0;
+        transform: translate(-10%, -50%);
+        background-color: rgb(106, 87, 68);
+        border: 50px solid rgb(8, 30, 55);
+      }
+      .con-two::after {
+        right: 0;
+        bottom: 0;
+        transform: translate(10%, 40%);
+        background-color: rgb(106, 87, 68);
+        border: 45px solid #403b4a;
+      }
+      .con-p {
+      }
+
+      .con-p p {
+        margin-top: 0%;
+        font-family: sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+
+  <body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span> JOBS YATRA </span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse ml-auto"
+              id="navbarSupportedContent"
+            >
+              <div
+                class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="job.html"> Jobs </a>
+                  </li>
+                </ul>
+                <form class="form-inline ml-0 ml-lg-4">
+                  <button
+                    class="btn my-2 my-sm-0 nav_search-btn"
+                    type="submit"
+                  ></button>
+                </form>
+                <ul class="user_option navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                      <img src="images/login.png" alt="" />
+                      <span>Login</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <div class="emp-img">
+      <img src="images/img3.jpg" loading="lazy" />
+      <div class="header">
+        <h2>
+          <span>A Movie in the Park:<br />Kung Fu Panda</span>
+        </h2>
+        <button onclick="document.location='Employer.html'">Post Job</button>
+      </div>
+    </div>
+    <div class="con-two">
+      <div class="con-p">
+        <p style="color: #ffffff; font-size: xx-large">
+          See the person behind the resume
+        </p>
+        <p style="color: rgb(8, 30, 55)">
+          Get a broad view of each candidate with data-driven profiles. We’ll
+          also show you things you won’t find on resumes, like soft skills,
+          personal interests, and more.
+        </p>
+      </div>
+    </div>
+
+    <!-- info section -->
+    <section class="info_section layout_padding2-bottom layout_padding-top">
+      <div class="container info_content">
+        <div>
+          <div class="row">
+            <div class="col-md-3 about_links">
+              <div class="d-flex">
+                <h5>About Us</h5>
+              </div>
+              <div class="d-flex">
+                <ul>
+                  <li>
+                    <a href=""> About Us </a>
+                  </li>
+                  <li>
+                    <a href=""> About services </a>
+                  </li>
+                  <li>
+                    <a href=""> About </a>
+                  </li>
+                  <li>
+                    <a href=""> Services </a>
+                  </li>
+                  <li>
+                    <a href=""> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex">
+                <h5>Jobs</h5>
+              </div>
+              <div class="d-flex">
+                <ul>
+                  <li>
+                    <a href=""> 1 </a>
+                  </li>
+                  <li>
+                    <a href=""> 2 </a>
+                  </li>
+                  <li>
+                    <a href=""> 3 </a>
+                  </li>
+                  <li>
+                    <a href=""> 4 </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex">
+                <h5>For Employer</h5>
+              </div>
+              <div class="d-flex">
+                <ul>
+                  <li>
+                    <a href=""> a </a>
+                  </li>
+                  <li>
+                    <a href=""> b </a>
+                  </li>
+                  <li>
+                    <a href=""> c </a>
+                  </li>
+                  <li>
+                    <a href=""> d </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex">
+                <h5>Helpful Resources</h5>
+              </div>
+              <div class="d-flex">
+                <ul>
+                  <li>
+                    <a href=""> 1 </a>
+                  </li>
+                  <li>
+                    <a href=""> 2 </a>
+                  </li>
+                  <li>
+                    <a href=""> 3 </a>
+                  </li>
+                  <li>
+                    <a href=""> 4 </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-3 mt-2">
+            <div class="social-box">
+              <a href="">
+                <img src="images/fb.png" alt="" />
+              </a>
+
+              <a href="">
+                <img src="images/twitter.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/linkedin.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/insta.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="form_container mt-2">
+              <form action="">
+                <label for="subscribeMail"> Newsletter </label>
+                <input
+                  type="email"
+                  placeholder="Enter Your email"
+                  id="subscribeMail"
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="container-fluid footer_section">
+      <p>&copy; 2022 RV</p>
+    </footer>
+    <!-- footer section -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/description.js"></script>
+  </body>
+</html>
