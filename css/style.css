@@ -1,3 +1,12 @@
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .save-button{
+      margin: 1vh;
+  }
 body {
   font-family: "Poppins", sans-serif;
   position: relative;
@@ -18,7 +27,13 @@ body {
     background-position: 0 50%;
   }
 }
-
+#logo{
+  width: 7vh;
+}
+#logospan{
+  display: flex;
+  align-items: center;
+}
 .layout_padding {
   padding: 75px 0 25%;
 }
