@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-body{
+    margin: 2vh 0;
+    padding: 2vh 10vh;
+}
+
+
+.navbar-form-content{
+    color: #000;
+}
+
+.main-body{
+    margin-bottom: 5vh;
+    background-color: aliceblue;
+    display: grid;
+    row-gap: 20px;
+}
+
+.navbar-form{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font: bold 30px sans-serif;
+    color: black;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(230, 182, 92);
+}
+
+.main-content{
+    border: 1px solid rgb(214, 213, 213);
+    width: 70%;
+    margin: auto;
+    padding: 2vh 10vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+
+.delete{
+    justify-self: end;
+    grid-column: span 3;
+}
+
+.delete-btn{
+    background-color: rgb(96, 92, 92);
+    color: rgb(248, 211, 67);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.link :hover{
+    color: whitesmoke;
+}
+
+.line {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 2px;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+.detail{
+    justify-self: center;
+}
+
+.emp-detail{
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.employee{
+    font: bold 20px sans-serif;
+}

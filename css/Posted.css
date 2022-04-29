@@ -1,0 +1,57 @@
+.hero_area{
+    height: auto;
+}
+.main-body{
+    margin: auto;
+    display: grid;
+    row-gap: 20px;
+} 
+  .job_section .job_board {
+    -webkit-transition: none;
+    transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+  
+  .job_section .content-box .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 75px 0 50px 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .job_section .content-box .content .box {
+    width: 225px;
+    height: 150px;
+    background-color: #252525;
+    margin: 0px 10px 25px 10px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  
+  .job_section .content-box .content .box h4 {
+    color: #ffffff;
+    display: flex;
+
+    justify-content: center;
+  }
+  
+  .job_section .content-box .content .box a {
+    text-transform: uppercase;
+    color: #ff9f01;
+  }
+

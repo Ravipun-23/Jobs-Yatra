@@ -51,7 +51,7 @@
 }
 
 .reg-form{
-    margin: 40px;
+    width: 80%;
     background-color: rgb(219, 219, 219);
     border: 1px solid rgb(75, 75, 75);
     border-radius: 5px;
@@ -70,19 +70,6 @@
     align-self: center;
     font-size: 18px;
 }
-
-.chooseLogo{
-    border: 1px solid rgb(56, 56, 56);
-    padding: 5px;
-    background-color: aliceblue;
-    border-radius: 5px;
-}
-
-
-.addedDetails{
-    display: none;
-}
-
 .button{
     align-self: end;
     justify-self: center;
@@ -110,12 +97,6 @@
     align-self: center;
 }
 
-.form-submit{
-    width: 50%;
-    margin: auto;
-    grid-column: span 3;
-    justify-items: center;
-    font: bold 20px sans-serif;
-    padding: 10px 0 5px 0;
-}
+
+
 
