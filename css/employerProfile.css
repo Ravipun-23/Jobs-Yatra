@@ -1,102 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+   margin: 0;
+   padding: 0;
 }
-.hero_area{
-    height: auto;
-}
-
-.main-body{
-    display: grid;
-    row-gap: 20px;
-}
-.form-container{
-    width: 50%;
-    margin: 0 auto 20px;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    border: 1px solid rgb(38, 38, 38);
-    color: black;
-    border-radius: 10px;
+.hero_area {
+   height: auto;
 }
 
-.navbar-form{
-    width: 80%;
-    margin: auto;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(0, 0, 0);
+.main-body {
+   display: grid;
+   row-gap: 20px;
+}
+.form-container {
+   width: 50%;
+   margin: 0 auto 20px;
+   background-color: rgb(255, 255, 255);
+   display: grid;
+   border: 1px solid rgb(38, 38, 38);
+   color: black;
+   border-radius: 10px;
 }
 
-.body-navbar{
-    font: bold 30px sans-serif;
-    color: rgb(239, 240, 241);
+.navbar-form {
+   width: 80%;
+   margin: auto;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(0, 0, 0);
 }
 
-.link :hover{
-    color: rgb(27, 161, 239);
+.body-navbar {
+   font: bold 30px sans-serif;
+   color: rgb(239, 240, 241);
 }
 
-.form-detail{
-    justify-self: center;
-    font: bold 25px sans-serif;
-    padding-top: 20px;
+.link :hover {
+   color: rgb(27, 161, 239);
 }
 
-.logo{
-    grid-column: span 3;
-    justify-self: start;
-    text-align: start;
+.form-detail {
+   justify-self: center;
+   font: bold 25px sans-serif;
+   padding-top: 20px;
 }
 
-.reg-form{
-    width: 80%;
-    background-color: rgb(219, 219, 219);
-    border: 1px solid rgb(75, 75, 75);
-    border-radius: 5px;
-    padding: 5px 30px;
-    display: grid;
-    grid-template-columns: 200px 250px 250px;
-    column-gap: 5px;
-    row-gap: 10px;
-    text-align: center;
-    justify-self: center;
-    padding: 20px 10px;
+.logo {
+   grid-column: span 3;
+   justify-self: start;
+   text-align: start;
 }
 
-.edit-btn{
-    justify-self: start;
-    align-self: center;
-    font-size: 18px;
+.reg-form {
+   width: 80%;
+   background-color: rgb(219, 219, 219);
+   border: 1px solid rgb(75, 75, 75);
+   border-radius: 5px;
+   padding: 5px 30px;
+   display: flex;
+   column-gap: 5px;
+   row-gap: 10px;
+   justify-items: center;
+   padding: 20px 10px;
+   flex-direction: column;
+   margin: auto;
+   flex-wrap: wrap;
 }
-.button{
-    align-self: end;
-    justify-self: center;
-    padding: 5px 25px;
-    background-color: rgba(144, 56, 227, 0.7);
-    color: whitesmoke;
+.info {
+   /* display: flex;
+   justify-content: space-around;
+   align-items: flex-end; */
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   column-gap: 5px;
+   row-gap: 10px;
+   text-align: center;
+   justify-content: flex-end;
+   padding: 20px 10px;
+}
+.edit-btn,
+.cancel-btn {
+   text-align: left;
+   justify-self: flex-start;
+   align-self: flex-end;
+}
+.button {
+   align-self: end;
+   justify-self: center;
+   padding: 5px 25px;
+   background-color: rgba(144, 56, 227, 0.7);
+   color: whitesmoke;
 }
 
-.columnSpanned{
-    grid-column: span 2;
-    justify-self: start;
+.columnSpanned {
+   grid-column: span 2;
+   justify-self: start;
 }
 
-.form-input{
-    height: 35px;
-    width: 250px;
-    justify-self: start;
-    align-self: center;
-    border: 1px solid rgb(66, 66, 66);
-    border-radius: 5px;
+.form-input {
+   height: 35px;
+   width: 250px;
+   justify-self: start;
+   align-self: center;
+   border: 1px solid rgb(66, 66, 66);
+   border-radius: 5px;
 }
-.label{
-    font-size: 18px;
-    justify-self: center;
-    align-self: center;
+.label {
+   font-size: 18px;
+   justify-self: center;
+   align-self: center;
 }
 
+.GenB {
+   grid-column: span 3;
+   width: 20%;
+   justify-self: center;
+   padding: 7px 5px;
+   background-image: linear-gradient(
+      to right,
+      #403b4a 0%,
+      #e7e9bb 51%,
+      #403b4a 100%
+   );
+   text-align: center;
+   transition: 0.5s;
+   text-transform: uppercase;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   background-size: 200% auto;
+}
 
-
-
+.GenB:hover {
+   background-position: right center;
+   text-decoration: none;
+   color: #fff;
+}

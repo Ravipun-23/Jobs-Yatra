@@ -51,16 +51,20 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Employee/job.html"> Jobs </a>
+                  <a class="nav-link" href="Employee/job.php"> Jobs </a>
                 </li>
               </ul>
               <ul class="user_option navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="User Identification/Login.html"> <img src="images/login.png" alt=""> <span>Login</span> </a>
+                  <a id="username-container" class="nav-link" href="Employee/employeeProfile.html">
+                    <img src="images/login.png" alt="" />
+                    <span>for employer</span>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Employer/index.html"> <img src="images/register.png" alt="">
-                    <span>For Employer</span></a>
+                  <a class="nav-link" href="User_identification/Employee/login.html">
+                    <span id="login-status">Log Out</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -100,7 +104,7 @@
                 </div>
                 <div class="col-md-4 ">
                   <div class="img-box">
-                    <img src="/images/img2.png" alt="">
+                    <img src="images/home1.png" alt="">
                   </div>
                 </div>
               </div>
@@ -120,7 +124,7 @@
                 </div>
                 <div class="col-md-4 ">
                   <div class="img-box">
-                    <img src="/images/img1.png" alt="">
+                    <img src="images/img1.png" alt="">
                   </div>
                 </div>
               </div>
@@ -172,7 +176,7 @@
 
   <!-- job section -->
 
-  <section class="job_section">
+  <!-- <section class="job_section">
     <div class="container">
       <div class="heading_container">
         <h2> 
@@ -277,7 +281,7 @@
             </div>
           </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end job section -->
 
@@ -299,7 +303,7 @@
         </div>
         <div class="col-md-6 px-0">
           <div class="img-box">
-            <img src="images/feature-img.jpg" alt="">
+            <img src="images/job1.jpg" alt="">
           </div>
         </div>
       </div>
@@ -314,8 +318,6 @@
   <!-- info section -->
   <section class="info_section layout_padding2-bottom layout_padding-top">
     <div class="container info_content">
-
-      <div>
         <div class="row">
           <div class="col-md-3 about_links">
             <div class="d-flex">
@@ -326,22 +328,22 @@
             <div class="d-flex ">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="aboutus.html">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="contactus.html">
                     Contact Us 
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="Terms.html">
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="privacycenter.html">
                     Privacy Center
                   </a>
                 </li>
@@ -357,7 +359,7 @@
             <div class="d-flex ">
               <ul>
                 <li>
-                  <a href="/Employee/job.html">
+                  <a href="Employee/job.html">
                     Find Jobs
                   </a>
                 </li>
@@ -379,13 +381,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="Employer/index.html">
                     Post job
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Pricing
                   </a>
                 </li>
                 
@@ -393,22 +390,21 @@
             </div>
           </div>
         </div>
-      </div>
       <div class="row align-items-center">
         <div class="col-lg-3  mt-2">
           <div class="social-box">
-            <a href="">
+            <a href="fb.com">
               <img src="images/fb.png" alt="" />
             </a>
 
             <a href="">
-              <img src="images/twitter.png" alt="" />
+              <img src="images/twitter.png" alt="twitter.com" />
             </a>
             <a href="">
-              <img src="images/linkedin.png" alt="" />
+              <img src="images/linkedin.png" alt="linkedin.com" />
             </a>
             <a href="">
-              <img src="images/insta.png" alt="" />
+              <img src="images/insta.png" alt="instagram.com" />
             </a>
           </div>
 
@@ -432,7 +428,32 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function(){
+      const username = document.querySelector("#username-container span");
+      const username_link = document.querySelector("#username-container");
+      const login_status = document.querySelector("#login-status");
 
+      $.ajax({
+        url: "php/user_session.php?logged=0&name=0&employer=0&checkForm=0",
+        success:function(data){
+          var session = data.split(",");
+          if(session[0]=='1'){
+            if(session[3] == "0"){
+              // window.location.href = "Employee/employeeFillForm.html";
+            }
+            username.textContent = session[1].split(" ")[0];
+            username_link.setAttribute("href","Employee/employeeProfile.html")
+            login_status.textContent = "Log out";
+          }else{
+            username.textContent = "For Employer";
+            username_link.setAttribute("href","Employer/index.html")
+            login_status.textContent = "Login";
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

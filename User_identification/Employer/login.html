@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+
+      <title>JOBS YATRA</title>
+
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+
+      <!-- fonts style -->
+      <link
+         href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Custom styles for this template -->
+      <link href="../../css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="../../css/responsive.css" rel="stylesheet" />
+      <!-- job section style -->
+      <link href="../../css/job.css" rel="stylesheet" />
+
+      <style>
+         /*Start Login Style*/
+         .login {
+            flex: 50%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+            text-align: center;
+            padding-top: 100px;
+         }
+
+         input[type="email"],
+         input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: none;
+            background-color: #eeeeef;
+         }
+         input[type="checkbox"] {
+            float: left;
+            margin: 5px 5px 5px 0;
+         }
+         .login span {
+            float: left;
+         }
+         .login a {
+            display: block;
+            text-decoration: none;
+            color: #f7f1ea;
+            transition: 0.3s all ease-in-out;
+         }
+         .login a:hover,
+         #credential_warning {
+            text-shadow: -1px -1px 0 #e06e64, 1px -1px 0 #e06e64,
+               -1px 1px 0 #e06e64, 1px 1px 0 #e06e64;
+            font-style: oblique;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+         }
+
+         .login button {
+            width: 100%;
+            margin: 30px 0;
+            padding: 10px;
+            background-image: linear-gradient(
+               to right,
+               #403b4a 0%,
+               #e7e9bb 51%,
+               #403b4a 100%
+            );
+            text-align: center;
+            padding: 15px 45px;
+            transition: 0.5s;
+            text-transform: uppercase;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            background-size: 200% auto;
+         }
+
+         .login button:hover {
+            width: 97%;
+            background-position: right center; /* change the direction of the change here */
+            text-decoration: none;
+            color: #fff;
+         }
+         .login hr {
+            width: 30%;
+            display: inline-block;
+         }
+
+         /* .login p {
+            display: inline-block;
+            margin: 0px 10px 30px;
+            color: #f7f1ea;
+         } */
+
+         .login ul {
+            list-style: none;
+            margin-bottom: 40px;
+         }
+         .login ul li {
+            display: inline-block;
+            margin-right: 30px;
+            cursor: pointer;
+         }
+         .login ul li:hover {
+            opacity: 0.6;
+         }
+         .login ul li:last-child {
+            margin-right: 0;
+         }
+
+         /*Start Register Style*/
+         .register {
+            /* float: right; */
+            height: 100%;
+            margin: 120px 0;
+            flex: 50%;
+            color: #fff;
+            background-image: linear-gradient(
+               135deg,
+               #23212f 5%,
+               hsl(38, 86%, 69%) 95%
+            );
+            border-radius: 0 10px 10px 0;
+            text-align: center;
+            padding: 100px 10px 100px;
+         }
+         .register h2 {
+            margin: 30px 0;
+            font-size: 50px;
+            letter-spacing: 3px;
+         }
+         .register p {
+            font-size: 18px;
+            margin-bottom: 40px;
+         }
+         .register button {
+            margin: auto;
+            background-image: linear-gradient(
+               to right,
+               #403b4a 0%,
+               #e7e9bb 51%,
+               #403b4a 100%
+            );
+            text-align: center;
+            padding: 10px 60px 10px 60px;
+            transition: 0.5s;
+            text-transform: uppercase;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            background-size: 200% auto;
+         }
+         .register button:hover {
+            background-position: right center; /* change the direction of the change here */
+            text-decoration: none;
+            color: #fff;
+         }
+         body {
+            background-image: linear-gradient(
+               135deg,
+               #23212f 5%,
+               hsl(38, 86%, 69%) 95%
+            );
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+         }
+         .log-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+         }
+
+         .login h1 {
+            margin-left: 10%;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #f7f1ea;
+            align-self: center;
+            justify-self: center;
+         }
+         /* @media (min-width: 700px) and (max-width: 980px) {
+            .log-container{
+               text-align: center;
+            } */
+         /* } */
+         @media (max-width: 980px) {
+            .register {
+               margin: 0;
+               padding-top: 0;
+               width: 100%;
+            }
+            .login {
+               margin-bottom: 0;
+            }
+         }
+         @media (max-width: 714px) {
+            .log-container,
+            .register {
+               /* flex-direction: column; */
+               margin: 0 20px;
+               padding: 0;
+            }
+         }
+         @media (max-width: 400px) {
+            .register h2,
+            .register p {
+               font-size: medium;
+            }
+         }
+
+         .clear_warning {
+            display: none;
+         }
+      </style>
+   </head>
+
+   <body class="sub_page">
+      <div class="message-background">
+         <p id="message" class="message"></p>
+      </div>
+      <div class="hero_area">
+         <!-- header section strats -->
+         <header class="header_section">
+            <div class="container-fluid">
+               <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand" href="../../index.html">
+                     <img id="logo" src="../../images/logo.png" alt="" />
+                     <span> JOBS YATRA </span>
+                  </a>
+                  <button
+                     class="navbar-toggler"
+                     type="button"
+                     data-toggle="collapse"
+                     data-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation"
+                  >
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div
+                     class="collapse navbar-collapse ml-auto"
+                     id="navbarSupportedContent"
+                  >
+                     <div
+                        class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+                     >
+                        <ul class="navbar-nav">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="../../index.html"
+                                 >Home <span class="sr-only">(current)</span></a
+                              >
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="../../Employee/job.php">
+                                 Jobs
+                              </a>
+                           </li>
+                        </ul>
+                        <form class="form-inline ml-0 ml-lg-4">
+                           <button
+                              class="btn my-2 my-sm-0 nav_search-btn"
+                              type="submit"
+                           ></button>
+                        </form>
+                        <ul class="user_option navbar-nav">
+                           <li class="nav-item">
+                              <a
+                                 class="nav-link"
+                                 href="../../Employer/index.html"
+                              >
+                                 <img src="../../images/register.png" alt="" />
+                                 <span>For Employer</span></a
+                              >
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <!-- end header section -->
+      </div>
+
+      <div class="log-container">
+         <div class="login">
+            <div class="log-container">
+               <h1>Log in as Employer</h1>
+               <form id="form" onsubmit="event.preventDefault()">
+                  <input type="email" placeholder="Email" id="email" required />
+
+                  <input
+                     type="password"
+                     placeholder="Password"
+                     id="password"
+                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                     required
+                  />
+                  <br />
+                  <span style="color: #f7f1ea">
+                     <input type="checkbox" />
+                     Remember me
+                  </span>
+
+                  <a href="../forgotpw.html">Forgot password?</a>
+                  <span
+                     id="credential_warning"
+                     style="
+                        font-weight: bold;
+                        position: relative;
+                        left: 20%;
+                        margin: 10px auto;
+                     "
+                  >
+                     <p class="clear_warning" style="margin: 0">
+                        Wrong user credentials!!
+                     </p>
+                  </span>
+                  <button id="login">log in</button>
+               </form>
+               <hr />
+               <p>Or Connect With</p>
+               <hr />
+               <ul>
+                  <li><i class="fab fa-facebook-f fa-2x"></i></li>
+                  <li><i class="fab fa-twitter fa-2x"></i></li>
+                  <li><i class="fab fa-github fa-2x"></i></li>
+                  <li><i class="fab fa-linkedin-in fa-2x"></i></li>
+               </ul>
+            </div>
+         </div>
+         <div class="register">
+            <div class="log-container">
+               <i class="fas fa-user-plus fa-5x"></i>
+               <h2>Hello,friend!</h2>
+               <p>Enter your personal details and start journey with us</p>
+               <button onclick="document.location='signup.php'">
+                  Register
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <!-- end info_section -->
+
+      <!-- footer section -->
+      <footer class="container-fluid footer_section">
+         <p>&copy; 2022 RV</p>
+      </footer>
+      <!-- footer section -->
+
+      <script
+         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+         crossorigin="anonymous"
+      ></script>
+      <script src="../../js/jquery-3.4.1.min.js"></script>
+      <script src="../../js/bootstrap.min.js"></script>
+      <script src="../../js/wow.min.js"></script>
+      <script src="../../js/bootstrap.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+            const email = document.querySelector("#email");
+            const password = document.querySelector("#password");
+            const login = document.querySelector("#login");
+            const msg = document.querySelector("#credential_warning p");
+
+            const message_background = document.querySelector(
+               ".message-background"
+            );
+            const message = document.querySelector("#message");
+
+            $.ajax({
+               url: "../../php/user_session.php?destroy=0",
+               success: function (data) {},
+            });
+
+            $("#email").on("change", function () {
+               if (
+                  email.validationMessage ==
+                  "Email not registered as employer!!"
+               ) {
+                  email.setCustomValidity("");
+               }
+            });
+
+            $("#password").on("change", function () {
+               if (!msg.classList.contains("clear_warning")) {
+                  msg.classList.add("clear_warning");
+               }
+            });
+
+            $("#login").on("click", function () {
+               function sleep(ms) {
+                  return new Promise((resolve) => setTimeout(resolve, ms));
+               }
+               $.ajax({
+                  url: "../../php/login.php",
+                  data: {
+                     email: email.value,
+                     password: password.value,
+                     for_employer: 1,
+                  },
+                  success: function (data) {
+                     if (data == 1) {
+                        window.location.href = "../../Employer/index.html";
+                     } else if (data == 0) {
+                        message.textContent = "Wait for the process";
+                        message_background.classList.add("open");
+                        $email_val = email.value;
+                        $.ajax({
+                           url: "../../php/send_mail.php?email=" + $email_val,
+                           success: function (data) {
+                              console.log(data);
+                              message.textContent =
+                                 "Account with given mail is unverified. A new link is provided in your gmail. Please verify by clicking the link given to you to login in this page. Come back after verification.";
+                              checkVerification();
+                              // user report with mail sent status
+                           },
+                        });
+                     } else if (data == -10) {
+                        msg.classList.remove("clear_warning");
+                     } else if (data == -1) {
+                        email.setCustomValidity(
+                           "Email not registered as employer!!"
+                        );
+                        email.reportValidity();
+                     }
+                  },
+               });
+            });
+
+            function checkVerification() {
+               $.ajax({
+                  url: "../../php/user_session.php?logged=0",
+                  success: function (data) {
+                     var session = data.split(",");
+                     if (session[0] == "1") {
+                        window.location.href = "../../Employer/index.html";
+                     }
+                  },
+               });
+               setTimeout(checkVerification, 5000);
+            }
+         });
+      </script>
+   </body>
+</html>
+|

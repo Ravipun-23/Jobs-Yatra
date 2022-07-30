@@ -1,133 +1,139 @@
-
-.main-body{
-    margin: auto;
-    display: grid;
-    row-gap: 20px;
+.main-body {
+   margin: auto;
+   display: grid;
+   row-gap: 20px;
 }
-.form-container{
-    width: 70%;
-    margin: 30px auto 20px;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    border: 1px solid rgb(38, 38, 38);
-    color: black;
-    border-radius: 10px;
-}
-
-.navbar-form{
-    width: 80%;
-    margin: auto;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(0, 0, 0);
+.form-container {
+   width: 70%;
+   margin: 30px auto 20px;
+   background-color: rgb(255, 255, 255);
+   display: grid;
+   border: 1px solid rgb(38, 38, 38);
+   color: black;
+   border-radius: 10px;
 }
 
-.body-navbar{
-    font: bold 30px sans-serif;
-    color: rgb(239, 240, 241);
+.navbar-form {
+   width: 80%;
+   margin: auto;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(0, 0, 0);
 }
 
-.link :hover{
-    color: rgb(27, 161, 239);
+.body-navbar {
+   font: bold 30px sans-serif;
+   color: rgb(239, 240, 241);
 }
 
-.form-detail{
-    justify-self: center;
-    font: bold 25px sans-serif;
-    padding-top: 20px;
+.link :hover {
+   color: rgb(27, 161, 239);
 }
 
-.reg-form{
-    background-color: rgb(219, 219, 219);
-    border: 1px solid rgb(75, 75, 75);
-    border-radius: 5px;
-    padding: 5px 30px;
-    display: grid;
-    grid-template-columns: 200px 250px 250px;
-    column-gap: 5px;
-    row-gap: 10px;
-    text-align: center;
-    justify-self: center;
-    padding: 20px 10px;
+.form-detail {
+   justify-self: center;
+   font: bold 25px sans-serif;
+   padding-top: 20px;
 }
 
-.edit-btn{
-    justify-self: start;
-    align-self: center;
-    font-size: 18px;
+.reg-form {
+   background-color: rgb(219, 219, 219);
+   border: 1px solid rgb(75, 75, 75);
+   border-radius: 5px;
+   padding: 5px 30px;
+   display: grid;
+   grid-template-columns: 200px 250px 250px;
+   column-gap: 5px;
+   row-gap: 10px;
+   text-align: center;
+   justify-self: center;
+   padding: 20px 10px;
 }
 
+.edit-btn {
+   justify-self: start;
+   align-self: center;
+   font-size: 18px;
+}
 
-.addedDetails{
+/* .addedDetails{
     display: none;
+} */
+
+.button {
+   align-self: end;
+   justify-self: center;
+   padding: 5px 25px;
+   background-image: linear-gradient(
+      to right,
+      #403b4a 0%,
+      #e7e9bb 51%,
+      #403b4a 100%
+   );
+   text-align: center;
+   transition: 0.5s;
+   text-transform: uppercase;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   background-size: 200% auto;
+}
+.button:hover {
+   background-position: right center;
+   text-decoration: none;
+   color: #fff;
 }
 
-.button{
-    align-self: end;
-    justify-self: center;
-    padding: 5px 25px;
-    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
-    text-align: center;
-    transition: 0.5s;
-    text-transform: uppercase;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    background-size: 200% auto;
-}
-.button:hover
-{
-  background-position: right center; 
-  text-decoration: none;
-  color: #fff;
+.columnSpanned {
+   /* grid-column: span 2; */
+   justify-self: start;
 }
 
-.columnSpanned{
-    grid-column: span 2;
-    justify-self: start;
+.form-input {
+   height: 35px;
+   width: 250px;
+   justify-self: start;
+   align-self: center;
+   border: 1px solid rgb(66, 66, 66);
+   border-radius: 5px;
+}
+.label {
+   font-size: 18px;
+   justify-self: center;
+   align-self: center;
 }
 
-.form-input{
-    height: 35px;
-    width: 250px;
-    justify-self: start;
-    align-self: center;
-    border: 1px solid rgb(66, 66, 66);
-    border-radius: 5px;
-}
-.label{
-    font-size: 18px;
-    justify-self: center;
-    align-self: center;
+.form-submit {
+   width: 50%;
+   margin: auto;
+   grid-column: span 3;
+   justify-items: center;
+   font: bold 20px sans-serif;
+   padding: 10px 0 5px 0;
 }
 
-.form-submit{
-    width: 50%;
-    margin: auto;
-    grid-column: span 3;
-    justify-items: center;
-    font: bold 20px sans-serif;
-    padding: 10px 0 5px 0;
+.GenB {
+   grid-column: span 3;
+   width: 20%;
+   justify-self: center;
+   padding: 7px 5px;
+   background-image: linear-gradient(
+      to right,
+      #403b4a 0%,
+      #e7e9bb 51%,
+      #403b4a 100%
+   );
+   text-align: center;
+   transition: 0.5s;
+   text-transform: uppercase;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   background-size: 200% auto;
 }
-
-.GenB{
-    grid-column: span 3;
-    width: 20%;
-    justify-self: center;
-    padding: 7px 5px;
-    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
-    text-align: center;
-    transition: 0.5s;
-    text-transform: uppercase;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    background-size: 200% auto;
-}
-.GenB:hover
-{
-  background-position: right center; 
-  text-decoration: none;
-  color: #fff;
+.GenB:hover {
+   background-position: right center;
+   text-decoration: none;
+   color: #fff;
 }
